@@ -1,4 +1,4 @@
-# NetGesucht Blog
+# shadown Blog
 
 A personal blog built with [Hugo](https://gohugo.io/) and the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, deployed to [GitHub Pages](https://pages.github.com/).
 
