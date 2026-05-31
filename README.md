@@ -100,3 +100,4 @@ To set up for the first time:
 ├── static/                         # Static files (copied as-is)
 └── themes/PaperMod                 # Theme (git submodule)
 ```
+
