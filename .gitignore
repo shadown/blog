@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 .ngsynapse/
+
+# Hugo build output
+/public/
+/resources/

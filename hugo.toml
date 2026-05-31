@@ -1,0 +1,64 @@
+baseURL = 'https://netgesucht.github.io/blog/'
+locale = 'en-us'
+title = 'NetGesucht Blog'
+theme = 'PaperMod'
+defaultContentLanguage = 'en'
+enableInlineShortcodes = true
+enableRobotsTXT = true
+pygmentsUseClasses = true
+publishDir = 'public'
+
+[params]
+  description = 'Thoughts on technology, security, and building things'
+  author = 'NetGesucht'
+  ShowShareButtons = true
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "Welcome"
+    Content = "Thoughts, ideas, and notes on technology, security, and building things."
+
+  socialIcons = [
+    { name = "github", url = "https://github.com/netgesucht" }
+  ]
+
+  [params.cover]
+    linkFullImages = true
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 20
+
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.image]
+        useEmbed = true
+
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    style = 'monokai'
+    tabWidth = 2
