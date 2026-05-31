@@ -1,0 +1,309 @@
+/* =============================================================================
+   Custom Color Theme — inspired by odek.21no.de
+   Palette: deep near-black bg · sky-blue accent · mint green · violet purple
+   ============================================================================= */
+
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* --- Design tokens (mirrors odek.21no.de tokens.css) --- */
+:root {
+    --accent:        #38bdf8;
+    --accent-glow:   rgba(56, 189, 248, 0.12);
+    --accent-subtle: rgba(56, 189, 248, 0.08);
+    --clr-green:     #3dd68c;
+    --clr-green-sub: rgba(61, 214, 140, 0.10);
+    --clr-yellow:    #f5d90a;
+    --clr-purple:    #8b5cf6;
+    --clr-purple-sub:rgba(139, 92, 246, 0.10);
+}
+
+/* ─────────────────────────────────────────────
+   LIGHT THEME  (default)
+   ───────────────────────────────────────────── */
+:root {
+    --theme:         #f5f5f9;
+    --entry:         #ffffff;
+    --primary:       #16161a;
+    --secondary:     #6b6b75;
+    --tertiary:      #e4e4ec;
+    --content:       #2d2d3a;
+    --code-block-bg: #0d0d10;
+    --code-bg:       #ededf5;
+    --border:        #e0e0ea;
+}
+
+/* ─────────────────────────────────────────────
+   DARK THEME
+   ───────────────────────────────────────────── */
+:root[data-theme="dark"] {
+    --theme:         #0a0a0b;
+    --entry:         #16161a;
+    --primary:       #ededef;
+    --secondary:     #9b9ba3;
+    --tertiary:      #1e1e24;
+    --content:       #d0d0d8;
+    --code-block-bg: #0d0d10;
+    --code-bg:       #111113;
+    --border:        #1e1e24;
+}
+
+/* --- Base typography --- */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+code, pre, kbd, samp {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+/* ─────────────────────────────────────────────
+   LINKS
+   ───────────────────────────────────────────── */
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Keep nav links using primary color, not accent */
+.nav a,
+#top-link {
+    color: var(--primary);
+}
+
+/* ─────────────────────────────────────────────
+   SITE HEADER / LOGO
+   ───────────────────────────────────────────── */
+.logo a,
+.logo .logo-switches {
+    color: var(--accent) !important;
+    font-weight: 700;
+}
+
+/* ─────────────────────────────────────────────
+   POST ENTRY CARDS
+   ───────────────────────────────────────────── */
+.post-entry {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-entry:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-glow), 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Entry title links */
+.entry-header h2 a,
+.entry-header h2 {
+    color: var(--primary);
+}
+
+/* ─────────────────────────────────────────────
+   TAGS & TERMS
+   ───────────────────────────────────────────── */
+.post-tags a,
+.terms-tags a {
+    background: var(--accent-subtle);
+    color: var(--accent);
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.post-tags a:hover,
+.terms-tags a:hover {
+    background: rgba(56, 189, 248, 0.18);
+    border-color: var(--accent);
+    text-decoration: none;
+}
+
+/* ─────────────────────────────────────────────
+   HEADINGS  (gradient in both themes)
+   ───────────────────────────────────────────── */
+.post-title,
+.post-single .post-title {
+    background: linear-gradient(135deg, var(--accent), var(--clr-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Section headings inside posts */
+.post-content h1,
+.post-content h2 {
+    color: var(--accent);
+}
+
+.post-content h3,
+.post-content h4,
+.post-content h5 {
+    color: var(--primary);
+}
+
+/* ─────────────────────────────────────────────
+   HOME / PROFILE SECTION
+   ───────────────────────────────────────────── */
+.home-info-container {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--entry);
+}
+
+:root[data-theme="dark"] .home-info-container {
+    background: var(--entry);
+    border-color: rgba(255,255,255,0.07);
+}
+
+/* ─────────────────────────────────────────────
+   CODE BLOCKS
+   ───────────────────────────────────────────── */
+div.highlight,
+.post-content pre {
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+:root[data-theme="dark"] div.highlight,
+:root[data-theme="dark"] .post-content pre {
+    border-color: rgba(255,255,255,0.06);
+}
+
+/* Inline code */
+.post-content code:not(pre code) {
+    color: var(--clr-green);
+    background: var(--clr-green-sub);
+    border-radius: 5px;
+    padding: 1px 6px;
+    font-size: 0.875em;
+}
+
+:root[data-theme="dark"] .post-content code:not(pre code) {
+    background: rgba(61, 214, 140, 0.10);
+}
+
+/* ─────────────────────────────────────────────
+   BLOCKQUOTES
+   ───────────────────────────────────────────── */
+.post-content blockquote {
+    border-inline-start: 3px solid var(--accent);
+    background: var(--accent-subtle);
+    border-radius: 0 8px 8px 0;
+    padding: 12px 16px;
+    color: var(--secondary);
+}
+
+/* ─────────────────────────────────────────────
+   TABLE OF CONTENTS
+   ───────────────────────────────────────────── */
+.toc details summary {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.toc ul a {
+    color: var(--secondary);
+}
+
+.toc ul a:hover {
+    color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────
+   BREADCRUMBS / NAVIGATION
+   ───────────────────────────────────────────── */
+.breadcrumbs a {
+    color: var(--secondary);
+}
+
+.breadcrumbs a:hover {
+    color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────
+   FOOTER
+   ───────────────────────────────────────────── */
+.footer {
+    color: var(--secondary);
+}
+
+.footer a {
+    color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────
+   TABLES  (post content)
+   ───────────────────────────────────────────── */
+.post-content table {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.post-content th {
+    background: var(--accent-subtle);
+    color: var(--accent);
+    border-bottom: 1px solid var(--border);
+}
+
+:root[data-theme="dark"] .post-content th {
+    background: rgba(56, 189, 248, 0.08);
+}
+
+.post-content td {
+    border-bottom: 1px solid var(--border);
+}
+
+.post-content tr:last-child td {
+    border-bottom: none;
+}
+
+/* ─────────────────────────────────────────────
+   SHARE / READ-MORE BUTTONS
+   ───────────────────────────────────────────── */
+.share-buttons a,
+.read-more-nav a {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────
+   PAGINATION
+   ───────────────────────────────────────────── */
+.pagination a {
+    background: var(--accent);
+    color: #000;
+    font-weight: 600;
+}
+
+.pagination a:hover {
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+/* ─────────────────────────────────────────────
+   DARK MODE: subtle radial hero glow (like odek)
+   ───────────────────────────────────────────── */
+:root[data-theme="dark"] body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    background: radial-gradient(ellipse at 50% 0%, rgba(56,189,248,0.06) 0%, transparent 65%);
+    pointer-events: none;
+    z-index: 0;
+}

@@ -1,6 +1,6 @@
-baseURL = 'https://netgesucht.github.io/blog/'
+baseURL = 'https://shadown.github.io/blog/'
 locale = 'en-us'
-title = 'NetGesucht Blog'
+title = 'shadown Blog'
 theme = 'PaperMod'
 defaultContentLanguage = 'en'
 enableInlineShortcodes = true
@@ -10,7 +10,8 @@ publishDir = 'public'
 
 [params]
   description = 'Thoughts on technology, security, and building things'
-  author = 'NetGesucht'
+  author = 'Sergio "shadown" Alvarez'
+  defaultTheme = 'dark'
   ShowShareButtons = true
   ShowReadingTime = true
   ShowPostNavLinks = true
@@ -20,11 +21,11 @@ publishDir = 'public'
   comments = false
 
   [params.homeInfoParams]
-    Title = "Welcome"
-    Content = "Thoughts, ideas, and notes on technology, security, and building things."
+    Title = "Hi there"
+    Content = "Coauthored in partnership with NetGesucht Synapse, my AI Research Agent. This blog serves as a platform for sharing insights based on in-depth analyses, thoughts, predictions, and discussions about the latest trends and developments in the tech world and their impact on society. -- ⚠️ Disclaimer: This content is for informational and educational purposes only. It does not constitute financial, investment, legal, or professional advice. Always do your own research and consult qualified professionals before making any financial decisions."
 
   socialIcons = [
-    { name = "github", url = "https://github.com/netgesucht" }
+    { name = "github", url = "https://github.com/shadown" }
   ]
 
   [params.cover]
@@ -36,12 +37,6 @@ publishDir = 'public'
     name = 'Posts'
     url = '/posts/'
     weight = 10
-
-  [[menu.main]]
-    identifier = 'about'
-    name = 'About'
-    url = '/about/'
-    weight = 20
 
   [[menu.main]]
     identifier = 'tags'
