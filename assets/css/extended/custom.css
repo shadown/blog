@@ -6,6 +6,16 @@
 /* --- Google Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
+/* --- Responsive layout widths --- */
+:root {
+    /* content column: 720px → grows to 920px on large screens, shrinks on small */
+    --main-width: clamp(320px, 88vw, 920px);
+    /* nav bar: 1024px → grows to 1360px, never wider than 96vw */
+    --nav-width:  clamp(320px, 96vw, 1360px);
+    /* horizontal padding scales with viewport */
+    --gap: clamp(14px, 3.5vw, 28px);
+}
+
 /* --- Design tokens (mirrors odek.21no.de tokens.css) --- */
 :root {
     --accent:        #38bdf8;
