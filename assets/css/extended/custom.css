@@ -3,9 +3,6 @@
    Palette: deep near-black bg · sky-blue accent · mint green · violet purple
    ============================================================================= */
 
-/* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
-
 /* --- Responsive layout widths --- */
 :root {
     /* content column: 720px → grows to 920px on large screens, shrinks on small */

@@ -8,17 +8,17 @@
 
 <head>
   {{- partial "head.html" . }}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   {{- block "head" . }}{{ end }}
 </head>
 
-<body class="
-{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
-  list
-{{- end -}}
-{{- if eq site.Params.defaultTheme `dark` -}}
-  dark
-{{- end -}}
-" id="top">
+{{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) }}
+<body class="list" id="top">
+{{- else }}
+<body id="top">
+{{- end }}
   {{- partialCached "header.html" . .Page -}}
   <main class="main">
     {{- block "main" . }}{{ end }}
