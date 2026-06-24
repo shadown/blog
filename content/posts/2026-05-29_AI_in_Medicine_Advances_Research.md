@@ -12,23 +12,6 @@ ShowToc: true
 
 ---
 
-## Table of Contents
-
-1. [Executive Summary](#executive-summary)
-2. [Domain 1: Drug Discovery & Development](#domain-1-drug-discovery--development)
-3. [Domain 2: Medical Imaging & Diagnostics](#domain-2-medical-imaging--diagnostics)
-4. [Domain 3: Personalised & Precision Medicine](#domain-3-personalised--precision-medicine)
-5. [Domain 4: Clinical Decision Support](#domain-4-clinical-decision-support)
-6. [Domain 5: AI-Powered Health Platforms](#domain-5-ai-powered-health-platforms)
-7. [Domain 6: Surgery & Robotics](#domain-6-surgery--robotics)
-8. [Domain 7: Mental Health & Wellness](#domain-7-mental-health--wellness)
-9. [Cross-Cutting Trends](#cross-cutting-trends)
-10. [Analysis & Predictions](#analysis--predictions)
-11. [Key Metrics to Watch](#key-metrics-to-watch)
-12. [References & Further Reading](#references--further-reading)
-
----
-
 ## Executive Summary
 
 Artificial Intelligence is transforming medicine at an accelerating pace. What was once confined to research labs and pilot studies is now becoming **clinically deployed, FDA-cleared, and patient-facing**. From AlphaFold 3's atom-level biology simulations to AI copilots integrated into hospital EHR systems, the landscape in mid-2026 is markedly more mature than even 12 months prior.

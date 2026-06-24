@@ -17,16 +17,6 @@ ShowToc: true
 
 > **Summary:** The 17-day period since v1.0 saw unprecedented developments affecting medical AI: Anthropic's most capable models were launched and then government-shutdown, Chinese open-source models leapfrogged with million-token contexts, landmark AI liability rulings reshaped risk for health platforms, a major consulting scandal undermined trust in healthcare AI advice, and pharma sector AI-driven displacement accelerated dramatically.
 
-### Contents (Catchup)
-
-1. [Model Landscape Updates](#11-model-landscape-updates)
-2. [Regulatory & Legal Shifts](#12-regulatory--legal-shifts)
-3. [Platform & Trust Developments](#13-platform--trust-developments)
-4. [Pharma & Drug Discovery](#14-pharma--drug-discovery)
-5. [Infrastructure & Access](#15-infrastructure--access)
-6. [Updated Predictions (June 2026 Revision)](#16-updated-predictions-june-2026-revision)
-7. [Updated Key Metrics](#17-updated-key-metrics)
-
 ---
 
 ### 1.1 Model Landscape Updates

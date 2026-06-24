@@ -17,23 +17,6 @@ The global geopolitical landscape in mid-2026 is defined by **simultaneous multi
 
 ---
 
-## Table of Contents
-
-1. [Iran Nuclear Talks: Diplomacy or Stalling?](#1-iran-nuclear-talks-diplomacy-or-stalling)
-2. [Russia–Ukraine War: The Eastern Grinding Floor](#2-russia-ukraine-war-the-eastern-grinding-floor)
-3. [Middle East: Israel, Gaza, Lebanon & the UN Genocide Inquiry](#3-middle-east-israel-gaza-lebanon--the-un-genocide-inquiry)
-4. [United Kingdom: Starmer Resigns, Labour in Crisis](#4-united-kingdom-starmer-resigns-labour-in-crisis)
-5. [The United States: Trump Administration, Midterms & Institutional Turmoil](#5-the-united-states-trump-administration-midterms--institutional-turmoil)
-6. [Europe: Rearmament, Energy & the Heatwave Crisis](#6-europe-rearmament-energy--the-heatwave-crisis)
-7. [Latin America: Colombia's Rightward Pivot, Mexico–Cuba Oil Gambit](#7-latin-america-colombias-rightward-pivot-mexico-cuba-oil-gambit)
-8. [Africa: South Sudan Elections, DRC Ebola, Sahel Security Vacuum](#8-africa-south-sudan-elections-drc-ebola-sahel-security-vacuum)
-9. [Asia: Myanmar Atrocities, China's Regional Assertiveness](#9-asia-myanmar-atrocities-chinas-regional-assertiveness)
-10. [The Multipolar Order: BRICS, NATO, Energy & Critical Minerals](#10-the-multipolar-order-brics-nato-energy--critical-minerals)
-11. [Climate Geopolitics: Heatwaves, Adaptation & Migration Pressure](#11-climate-geopolitics-heatwaves-adaptation--migration-pressure)
-12. [Strategic Outlook: Risk Assessment & Scenarios](#12-strategic-outlook-risk-assessment--scenarios)
-
----
-
 ## 1. Iran Nuclear Talks: Diplomacy or Stalling?
 
 **Headline:** *"Iran says no new commitments on nuclear sites after Vance says inspectors to be invited back"* — BBC
