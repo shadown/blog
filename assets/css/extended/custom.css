@@ -200,6 +200,48 @@ div.highlight,
 }
 
 /* ─────────────────────────────────────────────
+   MERMAID DIAGRAMS
+   The same element is the <pre class="mermaid"> that holds the raw source
+   before Mermaid swaps in the <svg> on load. Mermaid updates the content in
+   place; the <pre> stays as the container.
+   ............................................. */
+.post-content pre.mermaid {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0;
+    padding: 0;
+    margin: 1.75em auto;
+    font-family: 'Inter', system-ui, sans-serif;
+
+    /* Cap to the content column width */
+    max-width: 100%;
+    box-sizing: border-box;
+
+    /* Block layout (NOT flex) so that when the inner <svg> is wider than the
+       column, horizontal scroll starts at the left edge and reaches all of
+       the diagram. Inline centering happens via margin:auto on the svg. */
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    /* subtle separator so the diagram reads as a block element */
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    scrollbar-width: thin;
+}
+
+/* The SVG Mermaid produces. With useMaxWidth:false it renders at natural size,
+   so it centers when small and scrolls horizontally when wide. */
+.post-content pre.mermaid > svg {
+    display: block;
+    margin: 0 auto;             /* center horizontally when narrower than column */
+    max-width: 100%;            /* never grow past the column */
+    height: auto;
+    background: transparent;    /* matches themeVariables.background */
+}
+
+/* ─────────────────────────────────────────────
    BLOCKQUOTES
    ───────────────────────────────────────────── */
 .post-content blockquote {

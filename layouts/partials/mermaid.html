@@ -1,10 +1,35 @@
 {{- if .Page.Store.Get "hasMermaid" }}
 <script type="module">
   import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+
+  // Pick the Mermaid theme matching the PaperMod data-theme attribute on <html>.
+  // PaperMod sets data-theme="dark" / "light" / "auto"; we resolve "auto" to dark.
+  const mTheme = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+
   mermaid.initialize({
-    startOnLoad: true,
-    theme: 'default',
+    startOnLoad: false,
+    // 'loose' allows HTML tags like <br/> inside node labels.
     securityLevel: 'loose',
+    theme: mTheme,
+    themeVariables: {
+      // Transparent so the page background shows through on both themes.
+      background: 'transparent',
+      fontSize: '15px',
+    },
+    flowchart: { htmlLabels: true, curve: 'basis', useMaxWidth: true },
+    sequence:   { useMaxWidth: true, wrap: true },
   });
+
+  // Explicitly render all <pre class="mermaid"> on the page. We pass startOnLoad:false
+  // and call run() ourselves so initialization is guaranteed to have completed first.
+  const render = () => mermaid.run({
+    querySelector: 'pre.mermaid',
+    suppressErrors: false,
+  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', render, { once: true });
+  } else {
+    render();
+  }
 </script>
 {{- end }}
