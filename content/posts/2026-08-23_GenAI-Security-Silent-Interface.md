@@ -1,5 +1,5 @@
 ---
-title: "GenAI Security — Covert Channels and Rogue Agents"
+title: "GenAI Security — The Silent Interface"
 date: 2026-08-23
 description: "A comprehensive taxonomy of covert communication, exfiltration, and perception-abuse primitives available to autonomous adversaries, with a focus on the amplification effects of agentic AI."
 tags: ["AI", "LLM", "Generative AI", "Security", "Threat Modeling", "Agentic AI", "Covert Channels", "Exfiltration", "Side Channels", "Perception Abuse", "Detection", "Defense"]
