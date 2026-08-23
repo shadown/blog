@@ -11,15 +11,12 @@ ShowToc: true
 
 > Most don’t even consider them in their infrastructure defense; in my opinion this will have to change drastically in the near future.
 
-# The Silent Interface
 
 ## An Enumerated Taxonomy of Covert Communication, Exfiltration, and Perception-Abuse Primitives Available to Autonomous Adversaries
 
-> Revision 5 · Status: reviewed & expanded · attribution/provenance pass (§1.1, App. C) · source-integration pass (July 2026 frontier-agent incidents, system-bus-radio, mousemic, WoL, baseband RX) · All diagrams: Mermaid
-
-**Document type:** Defensive security research / threat-intelligence paper
-**Audience:** Detection engineers, red teams, firmware/embedded security teams, AI-security researchers, CISO staff
-**Scope note:** This document is threat research produced for defense. Every technique is described at the level of *mechanism and detectability* so that defenders can build detection. No weaponized implementation code is included. Items marked **[PROPOSED]** are syntheses/extrapolations introduced here and are not (to the best of our knowledge) published, working exploits; they are research hypotheses for the defensive community to investigate before adversaries do. Items marked **[VERIFIED]** rest on published academic work or documented in-the-wild malware.
+> **Document type:** Defensive security research / threat-intelligence paper
+> **Audience:** Detection engineers, red teams, firmware/embedded security teams, AI-security researchers, CISO staff
+> **Scope note:** This document is threat research produced for defense. Every technique is described at the level of *mechanism and detectability* so that defenders can build detection. No weaponized implementation code is included. Items marked **[PROPOSED]** are syntheses/extrapolations introduced here and are not (to the best of our knowledge) published, working exploits; they are research hypotheses for the defensive community to investigate before adversaries do. Items marked **[VERIFIED]** rest on published academic work or documented in-the-wild malware.
 
 ---
 
